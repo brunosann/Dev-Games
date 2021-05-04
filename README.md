@@ -4,6 +4,13 @@
 
 ### Criado para praticar e desenvolver ainda mais meu conhecimentos
 
+<hr/>
+
+### Andamento do Projeto:
+
+-   [x] Desenvolvimento
+-   [ ] Finalizado
+
 ## Requisitos
 
 -   MySql
