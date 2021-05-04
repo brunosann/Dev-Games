@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.auth-input {
+    @apply border-2 border-gray-300 rounded-md w-full py-1 px-2 outline-none focus:border-blue-300;
+}
+
+.auth-label {
+    @apply block text-gray-600 font-medium mb-1;
+}
+
+.auth-btn {
+    @apply mt-3 w-full bg-blue-500 py-2 text-white rounded-md focus:outline-none focus:ring focus:border-blue-300;
+}
+
+.auth-is-invalid {
+    @apply border-red-400 outline-none focus:border-red-400;
+}
