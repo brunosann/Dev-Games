@@ -24,3 +24,5 @@ Route::post('/login', 'AuthController@login')->name('login.submit');
 
 Route::view('/register', 'register')->name('register')->name('register');
 Route::post('/register', 'AuthController@register')->name('register.submit');
+
+Route::get('/logout', 'AuthController@logout')->name('logout');

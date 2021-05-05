@@ -29,4 +29,12 @@ class AuthController extends Controller
         $request->session()->regenerate();
         return redirect()->intended();
     }
+
+    public function logout()
+    {
+        Auth::logout();
+        session()->invalidate();
+        session()->regenerateToken();
+        return redirect('/');
+    }
 }
