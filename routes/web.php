@@ -14,10 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth')->get('/', function () {
-    $user = Auth::user();
-    return view('welcome', compact('user'));
-});
+Route::get('/', function () {
+    return view('home');
+})->name('home');
 
 Route::view('/login', 'login')->name('login');
 Route::post('/login', 'AuthController@login')->name('login.submit');
