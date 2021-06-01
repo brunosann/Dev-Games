@@ -1,4 +1,4 @@
-<header class="shadow-lg bg-white">
+<header class="shadow-lg bg-white pb-2">
   <nav class="container mx-auto flex flex-col sm:flex-row justify-between items-center">
     <a href="{{ route('home') }}">
       <img width="100" src="{{ asset('storage/images/gamepad-za-dribbble2.png') }}" alt="logo" title="logo">
@@ -44,7 +44,7 @@
         <a href="" class="relative group flex items-center" title="carrinho">
           <i class="fa fa-shopping-cart fa-2x text-gray-500 group-hover:text-gray-800"></i>
           <span
-            class="flex items-center justify-center bg-blue-400 group-hover:bg-gratext-gray-700 text-white absolute -top-2 rounded-full w-6 h-6">50</span>
+            class="flex items-center justify-center bg-indigo-800 group-hover:bg-gratext-gray-700 text-white absolute -top-2 rounded-full w-6 h-6">50</span>
           <span class="text-gray-500 text-xl ml-1 group-hover:text-gray-800">Carrinho</span>
         </a>
       </li>

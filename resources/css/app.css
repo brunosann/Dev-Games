@@ -17,3 +17,59 @@
 .auth-is-invalid {
     @apply border-red-400 outline-none focus:border-red-400;
 }
+
+.slide-wrapper {
+    overflow: hidden;
+}
+
+.slide {
+    display: flex;
+}
+
+.slide:hover {
+    will-change: transform;
+}
+
+.slide li {
+    flex-shrink: 0;
+    width: 80vw;
+    max-width: 800px;
+    margin: 0 20px;
+
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    opacity: 0.8;
+    transform: scale(0.8);
+    transition: 0.4s;
+}
+
+.slide li.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.custom-controls {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.custom-controls li {
+    opacity: 0.6;
+    transform: scale(0.8);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 2px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+    background-color: #1f2937;
+    cursor: pointer;
+}
+
+.custom-controls li.active {
+    opacity: 1;
+    transform: scale(1);
+}

@@ -15,6 +15,8 @@
 
   @yield('main')
 
+  @include('layouts.footer')
+
   @yield('scripts')
 </body>
 
